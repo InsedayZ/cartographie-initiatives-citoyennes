@@ -110,7 +110,7 @@ L'application propose plusieurs niveaux d'analyse :
 
 ### 4.1 Vue d'Ensemble du Dashboard
 
-![Dashboard Overview](https://cartographie-initiatives-citoyennes.streamlit.app)
+![Dashboard Overview](dashboard_overview.webp)
 
 **Figure 1 : Interface principale de l'application de visualisation**
 
