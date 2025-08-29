@@ -151,13 +151,11 @@ cartographie-initiatives-citoyennes/
 
 Ce projet constitue un **proof of concept** démontrant des compétences en data visualisation et storytelling. 
 
-👉 **[Consultez le rapport d'analyse complet](RAPPORT_ANALYSE.md)** pour :
+👉 **[Consultez le rapport d'analyse complet](rapport_initiatives_citoyennes.md)** pour :
 - Méthodologie détaillée d'obtention des données
 - Interprétation approfondie de chaque visualisation
 - Insights stratégiques et recommandations
 - Exploration détaillée
-
-Ce projet constitue un **proof of concept** démontrant des compétences en data visualisation et storytelling. Pour toute question ou adaptation, se référer au rapport d'analyse complet inclus.
 
 ---
 
