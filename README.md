@@ -22,7 +22,7 @@ pip install streamlit plotly folium streamlit-folium pandas numpy
 streamlit run app.py
 ```
 
-L'application sera accessible à l'adresse : `https://cartographie-initiatives-citoyennes.streamlit.app`
+L'application sera accessible à l'adresse : [Ouvrir l’application Streamlit](https://cartographie-initiatives-citoyennes.streamlit.app)
 
 ## 📊 Fonctionnalités
 

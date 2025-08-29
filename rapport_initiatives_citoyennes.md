@@ -105,12 +105,11 @@ L'application propose plusieurs niveaux d'analyse :
 
 ---
 
-
 ## 4. Analyse et Visualisations
 
 ### 4.1 Vue d'Ensemble du Dashboard
 
-![Dashboard Overview](https://cartographie-initiatives-citoyennes.streamlit.app)
+![Dashboard Overview](dashboard_overview.webp)
 
 **Figure 1 : Interface principale de l'application de visualisation**
 
@@ -402,4 +401,4 @@ Ce rapport constitue une documentation complète permettant la reproduction et l
 
 **Traduction les données en insights data-driven**   
 **Outils : Python, Streamlit, Plotly, Folium**  
-**Nathan.Z**
+**Auteur👤: Nathan ZOUHOU**
