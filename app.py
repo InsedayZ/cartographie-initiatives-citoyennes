@@ -7,8 +7,6 @@ from plotly.subplots import make_subplots
 import folium
 from streamlit_folium import st_folium
 from datetime import datetime
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 # Configuration de la page
 st.set_page_config(

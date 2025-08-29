@@ -22,7 +22,7 @@ pip install streamlit plotly folium streamlit-folium pandas numpy
 streamlit run app.py
 ```
 
-L'application sera accessible à l'adresse : `http://localhost:8501`
+L'application sera accessible à l'adresse : `https://cartographie-initiatives-citoyennes.streamlit.app`
 
 ## 📊 Fonctionnalités
 
@@ -168,4 +168,7 @@ Ce projet constitue un **proof of concept** démontrant des compétences en data
 **Statut** : Données fictives
 
 
+#### Aperçu de l'application
+
+![Aperçu de l'application Streamlit](dashboard_overview.webp)
 
