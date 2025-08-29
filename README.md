@@ -168,5 +168,5 @@ Ce projet constitue un **proof of concept** démontrant des compétences en data
 
 #### Aperçu de l'application
 
-![Aperçu de l'application Streamlit](dashboard_overview.webp)
+![Aperçu de l'application Streamlit](dashboard-preview.png)
 
