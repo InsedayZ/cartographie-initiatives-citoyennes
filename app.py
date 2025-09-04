@@ -197,56 +197,6 @@ def create_geographic_analysis(df):
     
     return fig_cities, fig_districts
 
-def create_impact_analysis(df):
-    """Analyse des impacts"""
-    # Matrice de corrélation impact social vs environnemental
-    impact_cross = pd.crosstab(df['Impact_Social_Perçu'], df['Impact_Environnemental_Perçu'])
-    
-    fig_heatmap = px.imshow(
-        impact_cross.values,
-        x=impact_cross.columns,
-        y=impact_cross.index,
-        title="Corrélation Impact Social vs Impact Environnemental",
-        labels={'x': 'Impact Environnemental', 'y': 'Impact Social'},
-        color_continuous_scale='RdYlBu_r',
-        text_auto=True
-    )
-    
-    fig_heatmap.update_layout(height=400)
-    
-    # Taux de réussite par type d'initiative
-    success_by_type = df.groupby('Type_Initiative')['Statut'].apply(
-        lambda x: (x == 'Réussi').mean() * 100
-    ).sort_values(ascending=True)
-    
-    fig_success = px.bar(
-        x=success_by_type.values,
-        y=success_by_type.index,
-        orientation='h',
-        title="Taux de Réussite par Type d'Initiative",
-        labels={'x': 'Taux de réussite (%)', 'y': 'Type d\'initiative'},
-        color=success_by_type.values,
-        color_continuous_scale='RdYlGn'
-    )
-    
-    # Ajout des pourcentages
-    for i, rate in enumerate(success_by_type.values):
-        fig_success.add_annotation(
-            x=rate + 1,
-            y=i,
-            text=f"{rate:.1f}%",
-            showarrow=False,
-            font=dict(size=12, color="black")
-        )
-    
-    fig_success.update_layout(
-        height=400,
-        showlegend=False,
-        yaxis={'categoryorder': 'total ascending'}
-    )
-    
-    return fig_heatmap, fig_success
-
 def create_interactive_map(df):
     """Création de la carte interactive"""
     # Utilisation des coordonnées originales pour la vraie géolocalisation
@@ -404,21 +354,6 @@ def main():
     suggérant des écosystèmes locaux favorables à l'engagement citoyen.
     """)
     
-    # Analyse des impacts
-    st.markdown('<h2 class="section-header">🎯 Analyse des Impacts</h2>', unsafe_allow_html=True)
-    fig_heatmap, fig_success = create_impact_analysis(filtered_df)
-    
-    col1, col2 = st.columns(2)
-    with col1:
-        st.plotly_chart(fig_heatmap, use_container_width=True)
-    with col2:
-        st.plotly_chart(fig_success, use_container_width=True)
-    
-    st.markdown("""
-    **Interprétation:** La corrélation entre impacts social et environnemental révèle des synergies intéressantes. 
-    Les taux de réussite variables selon les types d'initiatives suggèrent des facteurs de succès spécifiques 
-    à chaque catégorie d'action citoyenne.
-    """)
     
     # Carte interactive
     st.markdown('<h2 class="section-header">🗺️ Cartographie Interactive</h2>', unsafe_allow_html=True)

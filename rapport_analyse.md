@@ -1,6 +1,6 @@
-# Cartographie Interactive des Initiatives Citoyennes Urbaines et de leur Impact
+# Cartographie Interactive des Initiatives Citoyennes Urbaines 
 
-## Rapport d'Analyse - Data Visualisation & Storytelling
+## Rapport d'Analyse 
 
 ---
 
@@ -8,28 +8,20 @@
 
 ### Contexte du Projet
 
-Ce projet s'inscrit dans une démarche d'analyse des initiatives citoyennes en se basant sur le jeu de données et les graphiques fournis. L'engagement citoyen dans les espaces urbains représente un enjeu majeur de notre époque, où les habitants cherchent à reprendre possession de leur environnement quotidien à travers des initiatives locales et participatives.
+L'engagement citoyen dans les espaces urbains représente un enjeu majeur de notre époque, où les habitants cherchent à reprendre possession de leur environnement quotidien à travers des initiatives locales et participatives.
 
-Les initiatives citoyennes urbaines constituent un phénomène en pleine expansion, reflétant une volonté croissante des citoyens de s'impliquer activement dans l'amélioration de leur cadre de vie. Ces actions, qu'elles soient artistiques, environnementales ou sociales, témoignent d'une transformation profonde des modes de participation démocratique et d'appropriation de l'espace public.
+Les initiatives citoyennes urbaines constituent un phénomène en pleine expansion, reflétant une volonté croissante des citoyens de s'impliquer activement dans l'amélioration de leur cadre de vie. 
 
-### Objectif du Rapport
+### Objectif et nature du Rapport
 
-L'objectif de ce rapport est de présenter une analyse exploratoire des initiatives citoyennes urbaines à travers des données fictives, en utilisant les outils modernes de data visualisation et de storytelling. Cette analyse vise à :
+L'objectif de ce rapport est de présenter une analyse exploratoire des initiatives citoyennes urbaines à travers des données fictives, en utilisant les outils modernes. 
+
+Cette analyse vise à :
 
 - Identifier les patterns et tendances dans les initiatives citoyennes urbaines
-- Analyser la répartition géographique et temporelle de ces initiatives
-- Évaluer l'impact social et environnemental perçu de ces actions
-- Proposer des insights data-driven pour orienter les politiques publiques
-
-### Nature du Projet
-
-Il s'agit d'un **"proof of concept"** démontrant mes compétences en data visualisation et storytelling. Ce projet illustre ma capacité à :
-
-- Analyser des jeux de données complexes
-- Créer des visualisations interactives et engageantes
-- Développer des applications web de data visualisation
 - Interpréter les données dans un contexte sociologique et urbain
-- Communiquer des insights de manière claire et accessible
+- Analyser la répartition géographique et temporelle de ces initiatives
+- Proposer des insights data-driven pour orienter les politiques publiques
 
 ---
 
@@ -39,7 +31,7 @@ Il s'agit d'un **"proof of concept"** démontrant mes compétences en data visua
 
 Les données utilisées dans cette analyse sont **fictives** et ont été créées spécifiquement pour ce projet de démonstration. Elles simulent un recensement d'initiatives citoyennes urbaines dans 10 grandes villes françaises sur la période 2020-2024.
 
-### Structure du Dataset
+### Structure des données
 
 Le jeu de données `data_fictives_augmentees.csv` contient **100 initiatives** décrites par **19 variables** :
 
@@ -88,11 +80,6 @@ Dans un contexte réel, ce type de données pourrait être obtenu par :
 
 L'application de visualisation a été développée avec **Streamlit**, un framework Python permettant de créer rapidement des applications web interactives pour la data science. Cette solution offre :
 
-- **Simplicité de développement** : Code Python pur, sans HTML/CSS/JavaScript
-- **Interactivité native** : Widgets et filtres intégrés
-- **Visualisations avancées** : Intégration Plotly et Folium
-- **Déploiement facile** : Application web accessible via navigateur
-
 ### Fonctionnalités Implémentées
 
 L'application propose plusieurs niveaux d'analyse :
@@ -101,7 +88,6 @@ L'application propose plusieurs niveaux d'analyse :
 2. **Filtres interactifs** : Sélection par ville, type d'initiative et statut
 3. **Visualisations multiples** : Graphiques en barres, courbes temporelles, heatmaps
 4. **Cartographie interactive** : Géolocalisation des initiatives avec pop-ups informatifs
-5. **Analyses croisées** : Corrélations entre variables d'impact
 
 ---
 
@@ -186,31 +172,7 @@ Certains quartiers comme **Vieux Lyon**, **Neudorf** et **Capucins** (6 initiati
 - Des **territoires catalyseurs** : conditions locales particulièrement favorables
 - Des **réseaux d'acteurs** : communautés engagées et organisées
 
-### 4.5 Analyse des Impacts
-
-**Description de la Visualisation :**
-Une heatmap de corrélation croise les impacts sociaux et environnementaux, tandis qu'un graphique en barres présente les taux de réussite par type d'initiative.
-
-**Interprétation des Résultats :**
-
-**Corrélation Impact Social vs Environnemental :**
-La matrice révèle des **synergies intéressantes** :
-- Les initiatives à fort impact social tendent vers un impact environnemental élevé
-- Peu d'initiatives présentent un impact faible sur les deux dimensions
-- Les **jardins partagés** et **composteurs** excellent sur les deux aspects
-
-**Taux de Réussite par Type :**
-- **Boîtes à Livres** (83.3%) : Simplicité de mise en œuvre et maintenance
-- **Fresques Murales** (81.8%) : Projets bien délimités dans le temps
-- **Événements de Quartier** (72.7%) : Animation ponctuelle moins complexe
-- **Jardins Partagés** (36.8%) : Projets plus complexes nécessitant un suivi long terme
-
-Ces variations suggèrent des **facteurs de succès spécifiques** :
-- **Complexité organisationnelle** : Plus elle est faible, plus le taux de réussite est élevé
-- **Durée d'engagement** : Les projets ponctuels réussissent mieux que les projets permanents
-- **Compétences requises** : Les initiatives techniques sont plus risquées
-
-### 4.6 Cartographie Interactive
+### 4.5 Cartographie Interactive
 
 **Description de la Visualisation :**
 Une carte interactive de la France localise précisément chaque initiative avec des marqueurs colorés par type et des icônes indiquant le statut.
@@ -229,7 +191,6 @@ Cette visualisation permet une **approche territoriale** de l'analyse, essentiel
 - Adapter les politiques aux spécificités territoriales
 
 ---
-
 
 ## 5. Insights Clés et Storytelling
 
@@ -338,64 +299,15 @@ La fenêtre temporelle 2020-2024 ne permet pas d'analyser les cycles longs et le
 
 ### 8.1 Apports de cette Analyse
 
-Ce projet démontre la **puissance du storytelling data-driven** pour éclairer les enjeux sociétaux contemporains. L'application développée illustre comment les outils modernes de visualisation peuvent transformer des données brutes en insights actionnables pour les décideurs publics et les acteurs de terrain.
+Ce projet met en lumière l’efficacité du récit fondé sur les données pour aborder les enjeux sociétaux actuels. L’application montre comment des outils de visualisation modernes transforment des données brutes en informations exploitables par les décideurs publics et les acteurs de terrain.
 
-### 8.2 Compétences Démontrées
-
-Cette réalisation met en évidence plusieurs compétences clés :
-
-**Techniques :**
-- Maîtrise des outils de data science (Python, Pandas, Plotly, Streamlit)
-- Développement d'applications web interactives
-- Création de visualisations engageantes et informatives
-
-**Analytiques :**
-- Analyse exploratoire de données complexes
-- Identification de patterns et corrélations significatives
-- Interprétation contextuelle des résultats
-
-**Communication :**
-- Storytelling efficace avec les données
-- Adaptation du discours aux différents publics
-- Synthèse d'insights actionnables
-
-### 8.3 Impact Potentiel
+### 8.2 Impact Potentiel
 
 Dans un contexte réel, ce type d'analyse pourrait contribuer à :
 - **Optimiser les politiques publiques** de soutien à l'engagement citoyen
 - **Améliorer l'efficacité** des programmes d'accompagnement
 - **Favoriser l'essaimage** des initiatives réussies
 - **Renforcer la démocratie participative** par une meilleure compréhension des dynamiques citoyennes
-
----
-
-## 9. Annexes Techniques
-
-### 9.1 Architecture de l'Application
-
-**Stack Technique :**
-- **Backend** : Python 3.11, Streamlit 1.49.0
-- **Visualisations** : Plotly Express, Folium
-- **Data Processing** : Pandas, NumPy
-- **Déploiement** : Application web accessible via navigateur
-
-**Fonctionnalités Implémentées :**
-- Dashboard interactif avec métriques temps réel
-- Filtres dynamiques (ville, type, statut)
-- Graphiques interactifs (zoom, pan, export)
-- Cartographie avec géolocalisation précise
-- Interface responsive et épurée
-
-### 9.2 Reproductibilité
-
-**Code Source :**
-L'intégralité du code est documentée et structurée pour faciliter la maintenance et l'évolution. Les bonnes pratiques de développement sont respectées (fonctions modulaires, commentaires, gestion d'erreurs).
-
-**Données :**
-Le dataset est fourni au format CSV standard, facilement importable dans tout environnement d'analyse de données.
-
-**Documentation :**
-Ce rapport constitue une documentation complète permettant la reproduction et l'adaptation de l'analyse à d'autres contextes.
 
 ---
 
